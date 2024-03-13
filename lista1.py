@@ -44,14 +44,15 @@ print("C) Peter Parker")
 print("D) Tony Stark")
 print("E) Steve Rogers")
 
-gabarito = 'A'
+resposta = 'A'
 
-resposta_usuario = input("Digite sua resposta: ")
+respostaUsuario = input("Digite sua resposta: ")
 
-if (gabarito == resposta_usuario.upper()):
+if (resposta == respostaUsuario.upper()):
     print("Você acertou!!!")
 else:
-    print("Você respondeu alternativa", resposta_usuario, ". A responta correta era a alternativa 'A'.")
+    print("Você respondeu alternativa", respostaUsuario, ". A responta correta era a alternativa 'A'.")
+
 
 
 # 4. Como poderíamos tornar o programa acima mais genérico, de maneira que pudéssemos registrar qualquer questão objetiva com 5 alternativas?
