@@ -57,9 +57,60 @@
 
 # 6) Brincadeira do PAR ou ÍMPAR. Pergunte para o usuário se ele aposta em PAR ou ÍMPAR. Depois disso, peça para ele digitar um número de 0 a 5 (como se fosse mostrar os dedos da mão. Sorteie um número de 0 a 5 e some com o que o usuário digitou. Se o usuário escolheu PAR e o valor da soma for par OU se ele escolheu ÍMPAR e o valor da soma é ímpar, diga que ele venceu. Senão, diga que o programa venceu
 
+# import random
+# usuario = input("Digite P para escolher par e I para impar: ")
+# numeroU = int(input('Digite um número de 0 a 5: '))
+
+# sorteio = random.randint(1,5)
+# print('Numero sorteado pela máquina: ', sorteio)
+
+# if usuario == 'P' and ((numeroU + sorteio)%2)==0:
+#     print('Você ganhou!')
+
+# elif usuario == 'I' and ((numeroU + sorteio)%3)==0:
+#     print('Você ganhou!')
+
+# else:
+#     print('O programa ganhou, tente novamente :(')
+
+
+
 # 7) Implementar um programa que calcula o desconto previdenciário de um funcionário. O programa deve, dado um salário retornar o valor do desconto proporcional ao mesmo. O cálculo de desconto segue a regra: o desconto deve 11% do valor do salário. Entretanto, o valor máximo de desconto é 318,20. Sendo assim, ou o método retorna 11% sobre o salário ou 318,20.
 
+# salario = float(input('Digite o seu salário: '))
+
+# desconto = (salario * 0.11)
+# salarioF = (salario * 0.89)
+
+# if desconto > 318.20:
+#     desconto2 = (salario - 318.20)
+#     print("Seu salário final ficou: ", desconto2)
+
+# else:
+#     print(salarioF)
+
+
+
 # 8) Um comerciante comprou um produto e quer vendê-lo com lucros diferentes dependendo do valor da compra. Ele quer um lucro de 45% se o valor da compra for menor que R$ 20,00, 35% se o preço for de até 50 reais e lucro de 25% se valor for maior. Entrar com o valor do produto e imprimir na tela o valor de venda.
+
+# produto = float(input('Digite o valor do produto: '))
+
+# if produto < 20:
+#     soma = produto * 0.45
+#     somaF = produto + soma
+#     print('O valor final do produto ficará R$', somaF)
+
+# elif produto <= 50:
+#     soma = produto * 0.35
+#     somaF = produto + soma
+#     print('O valor final do produto ficará R$', somaF)
+
+# elif produto > 50:
+#     soma = produto * 0.25
+#     somaF = produto + soma
+#     print('O valor final do produto ficará R$', somaF)
+
+
 
 # 9) Faça um conversor de câmbio de reais/dólar/euro. O usuário deve informar inicialmente a cotação de cada moeda em relação ao real. Depois apresente o seguinte menu:
 # 1) Converter de Real para Euro
@@ -71,6 +122,36 @@
 # Leia o valor a ser convertido na moeda de origem e imprima na tela a quantidade na moeda destino.
 
 # 10) Dados não precisam ser tão “quadrados”, ou cúbicos para ser mais exato. Faça um programa que simule dados de 4, 6, 8, 10, 12 ou 16 faces (apenas estes valores). Peça para o usuário informar no começo do programa quantas faces quer, para depois fazer o sorteio.
+
+# import random
+# dado = int(input("Digite qual dado você quer sortear: "))
+
+
+# if dado ==4:
+#     sorteio = random.randint(1,4)
+#     print(sorteio)
+
+# elif dado ==6:
+#     sorteio = random.randint(1,6)
+#     print(sorteio)
+
+# elif dado ==8:
+#     sorteio = random.randint(1,8)
+#     print(sorteio)
+
+# elif dado ==10:
+#     sorteio = random.randint(1,10)
+#     print(sorteio)
+
+# elif dado ==12:
+#     sorteio = random.randint(1,12)
+#     print(sorteio)
+
+# elif dado ==16:
+#     sorteio = random.randint(1,16)
+#     print(sorteio)
+
+
 
 # 11) Crie um programa para informar quais e quantas notas são necessárias para entregar o mínimo de cédulas para um determinado valor informado pelo usuário considerando notas de R$ 100, R$ 50, R$ 20, R$ 10 e R$ 5 e R$ 1. Seu programa deve mostrar apenas as notas utilizadas. Por exemplo, ao solicitar R$18, o programa deve informar apenas a seguinte informação (note que não foram exibidas informações sobre as demais cédulas):
 # 1 nota(s) de R$ 10.
@@ -91,4 +172,4 @@
 # a) crianças com menos de 10 anos pagam R$100;
 # b) dependentes com idade entre 10 e 30 anos pagam R$220;
 # c) dependentes com idade entre 31 e 60 anos pagam R$ 395; 
-# d) dependentes com mais de 60 anos pagam R$ 480 
+# d) dependentes com mais de 60 anos pagam R$ 480
