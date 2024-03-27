@@ -80,14 +80,13 @@
 # salario = float(input('Digite o seu salário: '))
 
 # desconto = (salario * 0.11)
-# salarioF = (salario * 0.89)
+# # salarioF = (salario * 0.89)
 
 # if desconto > 318.20:
-#     desconto2 = (salario - 318.20)
-#     print("Seu salário final ficou: ", desconto2)
+#     print('O desconto foi de R$318.20')
 
 # else:
-#     print(salarioF)
+#     print('O desconto do seu salário foi de R$', desconto)
 
 
 
@@ -111,7 +110,7 @@
 #     print('O valor final do produto ficará R$', somaF)
 
 
-
+# !!!!!!!!!! NÃO ESTÁ FUNCIONANDO !!!!!!!!!!!!!!!!!!
 # 9) Faça um conversor de câmbio de reais/dólar/euro. O usuário deve informar inicialmente a cotação de cada moeda em relação ao real. Depois apresente o seguinte menu:
 # 1) Converter de Real para Euro
 # 2) Converter de Real para Dólar
@@ -120,6 +119,26 @@
 # 5) Converter de Dólar para Euro
 # 6) Converter de Dólar para Real
 # Leia o valor a ser convertido na moeda de origem e imprima na tela a quantidade na moeda destino.
+
+# euro = float(input('Digite a cotação do Euro: '))
+# dolar = float(input('Digite a cotação do Dólar: '))
+# escolha = input('Escolha uma das opções abaixo: \n' '1) Converter de Real para Euro \n' '2) Converter de Real para Dólar \n' '3) Converter de Euro para Dólar \n' '4) Converter de Euro para Real \n' '5) Converter de Dólar para Euro \n' '6) Converter de Dólar para Real \n\n' 'Digite apenas o número da opção:')
+
+# valor = float(input('Qual valor você deseja converter? '))
+
+# if escolha == '1':
+#     print(valor*euro)
+
+# if escolha == '2':
+#     print(valor*dolar)
+
+# if escolha == '3':
+#     print(valor*dolar)
+
+# if escolha == '4':
+#     print(valor)
+
+
 
 # 10) Dados não precisam ser tão “quadrados”, ou cúbicos para ser mais exato. Faça um programa que simule dados de 4, 6, 8, 10, 12 ou 16 faces (apenas estes valores). Peça para o usuário informar no começo do programa quantas faces quer, para depois fazer o sorteio.
 
@@ -157,6 +176,51 @@
 # 1 nota(s) de R$ 10.
 # 1 nota(s) de R$ 5.
 # 3 nota(s) de R$ 1.
+
+# valor = float(input('Digite o valor a ser sacado: '))
+# if valor < 1:
+#     print("o valor digitado não pode ser sacado")
+
+# else:
+#     cem= valor//100
+#     resto= valor%100
+
+#     cinquenta= resto//50
+#     resto %= 50
+
+#     vinte= resto//20
+#     resto %=20
+
+#     dez= resto//10
+#     resto %=10
+
+#     cinco= resto//5
+#     resto %=5
+
+#     um= resto//1
+
+# total = ((um*1)+(cinco*5)+(dez*10)+(vinte*20)+(cinquenta*50)+(cem*100))
+# print("O valor sacado: R$", total)
+
+# if cem >= 1:
+#     print("Notas de R$ 100:", cem)
+
+# if cinquenta >= 1:
+#     print("Notas de R$ 50:", cinquenta)
+
+# if vinte >= 1:
+#     print("Notas de R$ 20:", vinte)
+
+# if dez >= 1:
+#     print("Notas de R$ 10:", dez)
+
+# if cinco >= 1:
+#     print("Notas de R$ 5:", cinco)
+
+# if um >= 1:
+#     print("Notas de R$ 1:", um)
+
+
 
 # 12) A confederação brasileira de natação irá promover eliminatórias para o próximo mundial. Fazer um algoritmo que receba a idade de um nadador e imprima a sua categoria segundo a tabela a seguir:
 # Categoria Idade
