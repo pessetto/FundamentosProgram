@@ -232,8 +232,40 @@
 
 # 13) Faça um programa que leia a nota do Grau A e do Grau B do aluno e calcule a média final conforme as regras da Unisinos. Imprima a média final na tela e diga se o aluno passou por média ou se ficou em recuperação (grau C). Se o aluno ficou em recuperação, pergunte se ele quer substituir o Grau A ou o Grau B (ele deve digitar ‘a’ ou ‘b’). Leia a nota do Grau C, recalcule a média de acordo com o grau substituído e imprima na tela o resultado, informando se ele foi aprovado ou reprovado.
 
+# grauA = float(input('Digite sua nota do Grau A: '))
+# grauB = float(input('Digite sua nota do Grau B: '))
+# soma = (((grauA*1)+(grauB*2))/3)
+
+# if (soma >= 6):
+#     print('Sua nota fiinal foi ', soma, 'então você não ficou em recuperação.')
+
+# else:
+#     print('Você precisará fazer o grau C')
+
+# grauC = float(input('Digite sua nota do Grau C: '))
+
+# subs = input('Qual nota você deseja substituir? ("A" ou "B"): ')
+
+# if subs == 'A':
+#     print('Sua nota final ficou: ', ((grauC*1)+(grauB*2))/3)
+
+# else:
+#     print('Sua nota final ficou: ', ((grauA*1)+(grauC*2))/3)
+
+
+
 # 14) Criar um programa para identificar o valor a ser pago por um plano de saúde dada a idade do conveniado considerando que todos pagam R$ 300 e mais um adicional (se tiver dependentes) conforme a seguinte tabela:
 # a) crianças com menos de 10 anos pagam R$100;
 # b) dependentes com idade entre 10 e 30 anos pagam R$220;
 # c) dependentes com idade entre 31 e 60 anos pagam R$ 395; 
 # d) dependentes com mais de 60 anos pagam R$ 480
+
+dependentes = int(input('Digite a quantidade de dependentes que você tem: '))
+
+if dependentes == 0:
+    print("Seu plano fica R$300")
+
+else:
+   idade=  int(input("Digite a idade dos seus dependentes: "))
+
+
