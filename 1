@@ -1,0 +1,8 @@
+def divisivelPorN(numero, divisor):
+    if divisor == 0:
+        print("Não é possível efetuar divisão por zero.")
+        return False
+    elif isinstance(numero, int) and isinstance(divisor, int):
+        return numero % divisor == 0
+    else:
+        raise ValueError("Os parâmetros devem ser números inteiros.")
