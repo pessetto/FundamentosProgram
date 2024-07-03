@@ -1,3 +1,3 @@
-**Trabalho Grau B**
-Júlia da Silveira Pessetto
+<h1>**Trabalho Grau B**</h1> <br><br>
+Júlia da Silveira Pessetto<br>
 Guilherme Meine Dreyer
